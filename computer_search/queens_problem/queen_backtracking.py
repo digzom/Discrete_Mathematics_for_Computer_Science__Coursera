@@ -1,12 +1,17 @@
+def can_be_extended(perm):
+    i = len(perm) - 1
+    return all(i - j != abs(perm[i] - perm[j]) for j in range(i))
+
+
 def extend(perm, n):
     if len(perm) == n:
-        print(f'Final permutation: {perm}')
-        return
+        print(perm)
+        exit()
 
-    print(f'Extending partial permutation {perm}...')
     for k in range(n):
         if k not in perm:
-            extend(perm + [k], n)
+            if can_be_extended(perm + [k]):
+                extend(perm + [k], n)
 
 
-extend(perm=[], n=3)
+extend(perm=[], n=24)

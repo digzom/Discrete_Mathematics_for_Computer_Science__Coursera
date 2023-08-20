@@ -6,3 +6,5 @@ def change(amount):
         return base_cases[amount]
 
     return change(amount - 3) + [3]
+
+print(change(15))

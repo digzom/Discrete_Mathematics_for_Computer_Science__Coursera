@@ -1,5 +1,5 @@
 def query(y: int):
-  x = 5
+  x = 100
   if x == y:
     return 'equal'
   elif x < y:
@@ -23,4 +23,4 @@ def guess(lower: int, upper: int):
     guess(middle + 1, upper)
 
 
-guess(1, 5)
+guess(1, 100)

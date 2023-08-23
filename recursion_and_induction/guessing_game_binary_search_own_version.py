@@ -11,8 +11,13 @@ def guess(lower: int, upper: int):
   elif answer == 'greater': 
     guess(middle + 1, upper)
   else:
+    print('Not supported answer.')
     guess(lower, upper)
 
 
+print('Decida o intervalo entre os números para que eu tente adivinhar o mais rápido possível: \n')
 
-guess(1, 10)
+lower = int(input('Menor número: '))
+upper = int(input('Maior número: '))
+
+guess(lower, upper)

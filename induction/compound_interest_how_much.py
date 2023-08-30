@@ -14,4 +14,4 @@ def print_example(starting_amount, earn_percent, day):
     )
 
 
-print_example(1000, 2, 365)
+print_example(1000, 10, )

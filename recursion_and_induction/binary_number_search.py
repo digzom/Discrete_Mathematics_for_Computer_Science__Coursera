@@ -1,5 +1,6 @@
 import random
 
+# try to generate dinamically
 random_numbers = [
     91,
     128,
